@@ -1,0 +1,7 @@
+backports.tarfile==1.2.0
+importlib-metadata==8.0.0
+jaraco.collections==5.1.0
+mkdocs-awesome-pages-plugin==2.9.3
+mkdocs-material==9.5.46
+pip-chill==1.0.3
+tomli==2.0.1
