@@ -57,3 +57,12 @@ Share            | A section for inviting others to access and edit your data ma
 Download         | A section allowing the data management plan to be downloaded in a variety of formats
 
 ## 4. Project Details
+
+This section documents high-level details about the project. Most fields are fairly self explanatory. At the bottom of the project details you will be some key details about the funding. Answers to these questions can be found in the table below:
+
+Field               | Suggested Answer
+------------------- | -------------------
+Identifier          | Identifier isn't used, this can be left empty.
+Funder              | Canada First Research Excellence Fund (CFREF)
+Funding Status      | Funded
+Grant number/url    | https://www.cfref-apogee.gc.ca/results-resultats/abstracts-resumes/competition_3/Dalhousie_University-eng.aspx
