@@ -66,3 +66,17 @@ Identifier          | Identifier isn't used, this can be left empty.
 Funder              | Canada First Research Excellence Fund (CFREF)
 Funding Status      | Funded
 Grant number/url    | https://www.cfref-apogee.gc.ca/results-resultats/abstracts-resumes/competition_3/Dalhousie_University-eng.aspx
+
+## 5. Contributors
+
+This section of the data management plan is used to identify key personnel involved in the research effort. There is no limit to the number of contributors that can be added. At a minimum, the principal investigator, and the person within the research team who is responsible for looking after the data should be identified. The interface for adding collaborators looks as follows:
+
+![DMP Assistant - Collaborator View](img/dmp-guide/dmp-collaborator.png)
+
+## Next Steps
+
+Now that you've successfully completed the initial steps to initiate a data management plan, you're ready to move on to writing the core of the plan. The "Plan overview" tab provides a description of the types of information that you will be asked for when writing the plan. This information is also available on the [Data Management Plan Overview](data-management-plan-overview.md) page.
+
+When you're ready to begin writing the core of your data management plan click "Write Plan".
+
+Onto the next step! [Project Outputs](data-management-planning-guide/1-project-outputs.md)
