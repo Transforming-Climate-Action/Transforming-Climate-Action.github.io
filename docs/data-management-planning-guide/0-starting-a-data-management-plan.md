@@ -1,9 +1,7 @@
-# Data Management Planning Guide
+# How to Start a Data Management Plan
 Data management plans (DMPs) are one of the foundations of good research data management (RDM), an international best practice, and increasingly required by institutions and funders, including the Canadian Tri-Agencies as outlined in their Research Data Management Policy. This page is intended to serve as a guide in helping you to prepare to draft a formal data management plan. 
 
 The [Digital Research Alliance of Canada](https://alliancecan.ca/en) provides a free tool to support the creation of consistent, standardized research data management plans([DMP Assistant](https://dmp-pgd.ca/)). The [Canadian Integrated Ocean Observing System (CIOOS)](https://cioos.ca/) maintains a robust DMP template that we will be building on and expanding for the Transforming Climate Action (TCA) project.
-
-A high-level overview of the data management planning process can be found here: [Data Management Plan Overview](data-management-plan-overview.md)
 
 ## 1. Accessing the DMP Assistant Tool
    
@@ -13,7 +11,7 @@ On the right side of the page you can either create an account, or sign-in using
 
 Once logged in you should see the dashboard view, showing an overview of your previously created data management plans, as well as a view of other data management plans created at your organization:
 
-![DMP Assistant - dashboard view](img/dmp-guide/dmp-dashboard.png)
+![DMP Assistant - dashboard view](../img/dmp-guide/dmp-dashboard.png)
 
 This interface can be used to both create, and update, data management plans.
 
@@ -21,14 +19,14 @@ This interface can be used to both create, and update, data management plans.
 
 Click "Create plan" in the dashboard view to begin the process.
 
-![DMP Assistant - Create new plan view](img/dmp-guide/dmp-create-plan-1.png)
+![DMP Assistant - Create new plan view](../img/dmp-guide/dmp-create-plan-1.png)
 
 This will bring you to a page requesting the title of your project and your primary research organization.
 
 1. The title of your project can be any name you choose
 2. In order to see the CIOOS DMP Template, you need to enter "Canadian Integrated Ocean Observing System" as your primary research organization. This choice doesn't have an impact other than dictating which DMP templates are available to you.
 3. Select "CIOOS Data and Research Output Management Plan" as your DMP template:
-![DMP Assistant - Choose DMP template](img/dmp-guide/dmp-create-plan-2.png)
+![DMP Assistant - Choose DMP template](../img/dmp-guide/dmp-create-plan-2.png)
 
 You have now successfully started your data management plan!
 
@@ -36,7 +34,7 @@ You have now successfully started your data management plan!
 
 After starting a data management plan you will be sent to an interface that looks like this:
 
-![DMP Assistant - Project Details](img/dmp-guide/dmp-project%20details.png)
+![DMP Assistant - Project Details](../img/dmp-guide/dmp-project%20details.png)
 
 It is not a requirement that you complete your data management plan in one sitting. Your progress can be saved and you can revisit the interface as many times as needed. The data management plan can also be revisited and updated at any point throughout the project. Data management plans should be treated as living documents that are expanded and adjusted accordingly as research plans evolve.
 
@@ -71,12 +69,12 @@ Grant number/url    | https://www.cfref-apogee.gc.ca/results-resultats/abstracts
 
 This section of the data management plan is used to identify key personnel involved in the research effort. There is no limit to the number of contributors that can be added. At a minimum, the principal investigator, and the person within the research team who is responsible for looking after the data should be identified. The interface for adding collaborators looks as follows:
 
-![DMP Assistant - Collaborator View](img/dmp-guide/dmp-collaborator.png)
+![DMP Assistant - Collaborator View](../img/dmp-guide/dmp-collaborator.png)
 
 ## Next Steps
 
-Now that you've successfully completed the initial steps to initiate a data management plan, you're ready to move on to writing the core of the plan. The "Plan overview" tab provides a description of the types of information that you will be asked for when writing the plan. This information is also available on the [Data Management Plan Overview](data-management-plan-overview.md) page.
+Now that you've successfully completed the initial steps to initiate a data management plan, you're ready to move on to writing the core of the plan. The "Plan overview" tab provides a description of the types of information that you will be asked for when writing the plan.
 
 When you're ready to begin writing the core of your data management plan click "Write Plan".
 
-Onto the next step! [Project Outputs](data-management-planning-guide/1-project-outputs.md)
+Onto the next step! [DMP Assistant - Write Plan Overview](1-write-plan-overview.md)
