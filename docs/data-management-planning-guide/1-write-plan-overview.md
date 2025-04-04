@@ -32,7 +32,9 @@ For recommendations and more information about choosing a metadata standard, ple
 ![DMP Assistant - Storage and Backup 1](../img/dmp-guide/dmp-storage-and-backup-1.png)
 ![DMP Assistant - Storage and Backup 2](../img/dmp-guide/dmp-storage-and-backup-2.png)
 
-- What are the anticipated storage requirements throughout the active phase of the project, in terms of storage space (in megabytes, gigabytes, terabytes, etc.) and the length of time you will be storing it?
+### What are the anticipated storage requirements throughout the active phase of the project, in terms of storage space (in megabytes, gigabytes, terabytes, etc.) and the length of time you will be storing it?
+
+
 ### How and where will your research outputs be stored and backed up during the active phase of the research project?
 For recommendations and more information on how to back up your research outputs, please see the [Backup Strategy](backup-strategy.md).
 
