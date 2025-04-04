@@ -33,10 +33,14 @@ For recommendations and more information about choosing a metadata standard, ple
 ![DMP Assistant - Storage and Backup 2](../img/dmp-guide/dmp-storage-and-backup-2.png)
 
 - What are the anticipated storage requirements throughout the active phase of the project, in terms of storage space (in megabytes, gigabytes, terabytes, etc.) and the length of time you will be storing it?
-- How and where will your research outputs be stored and backed up during the active phase of the research project?
+### How and where will your research outputs be stored and backed up during the active phase of the research project?
+For recommendations and more information on how to back up your research outputs, please see the [Backup Strategy](backup-strategy.md).
+
 ??? note
     If safe, secure, redundant near-term data storage represents a gap in your project, it is encouraged that you submit an [Application for the Canadian Digital Research Alliance Rapid Access Service.](https://docs.google.com/forms/d/e/1FAIpQLSeU_BoRk5cEz3AvVLf3e9yZJq-OvcFCQ-mg7p4AWXmUkd5rTw/viewform) For data storage requirements up to 10 terabytes applications are typically processed very quickly. [Additional details available here.](https://www.alliancecan.ca/en/services/advanced-research-computing/accessing-resources/rapid-access-service) If you have any questions please reach out to the data management accelerator at [insert address]
-- What collaboration environment and procedures will the research team use to access, modify and contribute data or other research outputs throughout the active phase of the project? How will you organize, name and version-control files in a (shared) directory?
+### What collaboration environment and procedures will the research team use to access, modify and contribute data or other research outputs throughout the active phase of the project? How will you organize, name and version-control files in a (shared) directory?
+For recommendations and more information about how to name your files, please see the [File Naming Convention](file-naming-convention.md).
+
 ??? note
     If transfer of large data files represents a challenge in your project, the Canadian Digital Research Alliance offers a robust data transfer service for large data files. Combined with the Rapid Access Service documented above, this represents a robust approach to the transfer and storage of small to medium volumes of data. [Additional details available here.](https://docs.alliancecan.ca/wiki/Globus) If you have any questions please reach out to the data management accelerator at [insert address]
 
