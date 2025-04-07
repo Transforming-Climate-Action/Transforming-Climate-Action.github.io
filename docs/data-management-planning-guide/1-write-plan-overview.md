@@ -52,10 +52,9 @@ For recommendations and more information about choosing a metadata standard, ple
 ![DMP Assistant - Sharing and Reuse 1](../img/dmp-guide/dmp-sharing-and-reuse-1.png)
 ![DMP Assistant - Sharing and Reuse 2](../img/dmp-guide/dmp-sharing-and-reuse-2.png)
 
-### What research outputs will be shared and in what form? (e.g. raw, processed, analyzed, and model).
-### Can your data and research outputs be shared with an open license?
-For how to choose a license, please see the [open license](4-open-licensing.md) page.
-### What steps will be taken to help the research community know that your research outputs exist?
+CIOOS provides detailed descriptions and in some cases examples for these questions. 
+
+If you plan to make your data open it is beneficial to adopt a formal open data license to ensure that you are appropriately attributed when others use your data and to ensure that your data are used in ways you're comfortable with. For more informaion please see [Open data Licenses](4-open-licensing.md).
    
 ## Responsibilities and Resources
 
