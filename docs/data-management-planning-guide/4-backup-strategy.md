@@ -13,7 +13,7 @@ A reliable backup strategy is essential for preserving the integrity and availab
 1.  **Identify Data to Back Up**
   
     - Determine which types of data are essential to back up. This typically includes raw data, processed data, analysis results, documentation, and metadata.
-    - Organize and label your files clearly so that critical data is easy to identify and locate. For more guidance, see the [file-naming-convention](file-naming-convention.md) for more details.
+    - Organize and label your files clearly so that critical data is easy to identify and locate. For more guidance, see the [file-naming-convention](5-file-naming-convention.md) for more details.
 
 2.  **Apply [the 3-2-1 Rule for Data Backup](4a-the-3-2-1-rule.md)**
 

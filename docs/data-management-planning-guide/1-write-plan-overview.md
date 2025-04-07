@@ -50,7 +50,7 @@ For recommendations and more information about how to name your files, please se
 ![DMP Assistant - Preservation](../img/dmp-guide/dmp-preservation.png)
 
 !!! note
-    Data and metadata may be preserved through submission to a suitable open data repository. Please see the [Data Repository Documentation](data-repository-documentation/introduction.md) for further details.
+    Data and metadata may be preserved through submission to a suitable open data repository. Please see the [Data Repository Documentation](../data-repository-documentation/introduction.md) for further details.
 
 ## Sharing and Reuse
 

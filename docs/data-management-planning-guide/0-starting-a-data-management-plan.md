@@ -38,7 +38,7 @@ After starting a data management plan you will be sent to an interface that look
 
 It is not a requirement that you complete your data management plan in one sitting. Your progress can be saved and you can revisit the interface as many times as needed. The data management plan can also be revisited and updated at any point throughout the project. Data management plans should be treated as living documents that are expanded and adjusted accordingly as research plans evolve.
 
-The title of your project entered in [step 2](data-management-planning-guide.md#2-creating-a-new-data-management-plan) appears at the top of the page.
+The title of your project entered in [step 2](0-starting-a-data-management-plan.md#2-creating-a-new-data-management-plan) appears at the top of the page.
 
 ### Overview of the sections
 
@@ -48,8 +48,8 @@ Section          | Description
 ---------------- | ------------- 
 Project Details  | A high level overview of the project, including start an end dates, an absract, and information about the funding  
 Contributors     | An overview of roles and responsibilities on the project, including the principal investigator, data management lead, project administrator, and any other key roles 
-Plan overview    | An informational section providing a description of the key sections and an explanation of the purpose of a data management plan. Much of this information is echoed and expanded upon in [Data Management Plan Overview](data-management-plan-overview.md)
-Write Plan       | This is where the plan itself is written. An overview of the sections is available in the plan overview section above as well as on the [Data Management Plan Overview](data-management-plan-overview.md)
+Plan overview    | An informational section providing a description of the key sections and an explanation of the purpose of a data management plan.
+Write Plan       | This is where the plan itself is written. An overview of the sections is available in the plan overview section above as well as on the [Data Management Plan Overview](1-write-plan-overview.md)
 Research Outputs | An overview of the specific outputs of the research. There are a variety of types of outputs including datasets and publications, but extending to include a broad swath of different output types
 Share            | A section for inviting others to access and edit your data management plan
 Download         | A section allowing the data management plan to be downloaded in a variety of formats
