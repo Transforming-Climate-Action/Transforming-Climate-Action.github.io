@@ -53,7 +53,7 @@ For recommendations and more information about choosing a metadata standard, ple
 ![DMP Assistant - Sharing and Reuse 2](../img/dmp-guide/dmp-sharing-and-reuse-2.png)
 
 ### What research outputs will be shared and in what form? (e.g. raw, processed, analyzed, and model).
-###Can your data and research outputs be shared with an open license?
+### Can your data and research outputs be shared with an open license?
 For how to choose a license, please see the [open license](4-open-licensing.md) page.
 ### What steps will be taken to help the research community know that your research outputs exist?
    
