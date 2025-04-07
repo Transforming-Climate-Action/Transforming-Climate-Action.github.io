@@ -1,10 +1,9 @@
-# Backup 3-2-1 rule
-
+# 3-2-1 Rule for Data Backup
 
 ## Introduction
 
 
-The 3-2-1 Backup Rule is a trusted strategy for ensuring your data remains secure and recoverable in case of loss or failure. It’s based on three simple principles:
+The 3-2-1 rule for data backup is a trusted strategy for ensuring your data remains secure and recoverable in case of loss or failure. It’s based on three simple principles:
 
 - **3 Total Copies**: Maintain at least three copies of your data—one primary (working) version and two backups.
 - **2 Different Storage Types**: Use at least two different types of storage media to minimize the risk of simultaneous failure. For example, combine an external hard drive with a cloud service or use both SSDs and institutional servers.
