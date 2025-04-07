@@ -13,8 +13,7 @@ A reliable backup strategy is essential for preserving the integrity and availab
 1.  **Identify Data to Back Up**
   
     - Determine which types of data are essential to back up. This typically includes raw data, processed data, analysis results, documentation, and metadata.
-    - Consider the value, sensitivity, and size of each data type to guide your backup priorities.
-    - Organize and label files clearly so that critical data is easy to identify and locate.
+    - Organize and label your files clearly so that critical data is easy to identify and locate. For more guidance, see the [file-naming-convention](file-naming-convention.md) for more details.
 
 2.  **Apply [the 3-2-1 Backup Rule](the-3-2-1-data-backup-strategy.md)**
 
@@ -35,9 +34,7 @@ A reliable backup strategy is essential for preserving the integrity and availab
 
 ## **_Example Plan_**
 
-When data is collected by the field team, it is first uploaded to the group’s lab computer. From the lab computer:
-  
+When data—including metadata, raw data, and processed data—is collected by the field team, it is first uploaded to the group’s lab computer.
+
 - The data is backed up daily to an external hard drive for local redundancy.
-- At the same time, a third-party software tool is used to automate the daily transfer of new data to a remote VPS hosted by the Digital Research Alliance of Canada for secure off-site backup.
-  
-This process runs daily to match the frequency at which new data is received from the field team.
+- Simultaneously, a third-party software tool automates the daily transfer of new data to a remote VPS hosted by the Digital Research Alliance of Canada for secure off-site backup.

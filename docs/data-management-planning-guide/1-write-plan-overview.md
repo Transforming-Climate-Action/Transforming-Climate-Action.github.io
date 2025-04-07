@@ -36,7 +36,7 @@ For recommendations and more information about choosing a metadata standard, ple
 
 
 ### How and where will your research outputs be stored and backed up during the active phase of the research project?
-For recommendations and more information on how to back up your research outputs, please see the [Backup Strategy](backup-strategy.md).
+For recommendations and more information on how to back up your research outputs, please see the [Data Backup Strategy](backup-strategy.md).
 
 ??? note
     If safe, secure, redundant near-term data storage represents a gap in your project, it is encouraged that you submit an [Application for the Canadian Digital Research Alliance Rapid Access Service.](https://docs.google.com/forms/d/e/1FAIpQLSeU_BoRk5cEz3AvVLf3e9yZJq-OvcFCQ-mg7p4AWXmUkd5rTw/viewform) For data storage requirements up to 10 terabytes applications are typically processed very quickly. [Additional details available here.](https://www.alliancecan.ca/en/services/advanced-research-computing/accessing-resources/rapid-access-service) If you have any questions please reach out to the data management accelerator at [insert address]
