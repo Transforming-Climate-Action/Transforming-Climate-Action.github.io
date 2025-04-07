@@ -1,8 +1,7 @@
 # Open Data License
 
 
-### How to choice a License
-
+### How to choose a license
 
 If you’re not already familiar with open licenses, **try the [Creative Commons License Chooser](https://chooser-beta.creativecommons.org)** — a user-friendly tool that helps you select the right license and generates the necessary license text.
 
