@@ -23,7 +23,7 @@ Files with a naming convention:
 - test_run_2_20250404.txt
 
 
-# How to define your own FNC
+## How to define your own FNC
 
 There is no single file naming convention (FNC) that fits all projects or datasets. However, you can follow general best practices to design an effective convention that suits your specific needs.
 

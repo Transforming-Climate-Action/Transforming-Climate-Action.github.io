@@ -11,7 +11,7 @@ The 3-2-1 rule for data backup is a trusted strategy for ensuring your data rema
 
 Following the 3-2-1 rule significantly improves your chances of data recovery and strengthens overall data resilience.
 
-### Example
+## Example
 
 A simple example of the 3-2-1 rule in practice:  
 Keep the original data on your computer, back it up to an external hard drive, and store a third copy in the cloud.
