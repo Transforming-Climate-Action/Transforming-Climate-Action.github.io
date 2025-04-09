@@ -32,23 +32,38 @@ For recommendations and more information about choosing a metadata standard, ple
 ![DMP Assistant - Storage and Backup 1](../img/dmp-guide/dmp-storage-and-backup-1.png)
 ![DMP Assistant - Storage and Backup 2](../img/dmp-guide/dmp-storage-and-backup-2.png)
 
-
 ### How and where will your research outputs be stored and backed up during the active phase of the research project?
+
 For recommendations and more information on how to back up your research outputs, please see the [Data Backup Strategy](4-backup-strategy.md).
 
+<!-- prettier-ignore -->
 !!! note
     If safe, secure, redundant near-term data storage represents a gap in your project, it is encouraged that you submit an [Application for the Canadian Digital Research Alliance Rapid Access Service.](https://docs.google.com/forms/d/e/1FAIpQLSeU_BoRk5cEz3AvVLf3e9yZJq-OvcFCQ-mg7p4AWXmUkd5rTw/viewform) For data storage requirements up to 10 terabytes applications are typically processed very quickly. [Additional details available here.](https://www.alliancecan.ca/en/services/advanced-research-computing/accessing-resources/rapid-access-service) If you have any questions please reach out to the data management accelerator at [insert address]
 
 ### What collaboration environment and procedures will the research team use to access, modify and contribute data or other research outputs throughout the active phase of the project? How will you organize, name and version-control files in a (shared) directory?
+
 For recommendations and more information about how to name your files, please see the [File Naming Convention](5-file-naming-convention.md).
 
+<!-- prettier-ignore -->
 !!! note
     If transfer of large data files represents a challenge in your project, the Canadian Digital Research Alliance offers a robust data transfer service for large data files. Combined with the Rapid Access Service documented above, this represents a robust approach to the transfer and storage of small to medium volumes of data. [Additional details available here.](https://docs.alliancecan.ca/wiki/Globus) If you have any questions please reach out to the data management accelerator at [insert address]
+
+### VALERIA - Laval University Storage Solution
+
+[VALERIA](https://valeria.science/accueil) is Laval University's institutional storage platform that integrates with the Canadian Digital Research Alliance infrastructure. Among others, it offers:
+
+- Secure and user-friendly platform for file sharing and collaboration
+- 4 terabytes of subsidized storage space per researcher
+- Built-in version control and file synchronization
+- Integration with common research tools and workflows
+
+VALERIA is available to all Laval University researchers and their collaborators. For detailed information about features, setup guides, and best practices, visit the [VALERIA documentation website](https://doc.s3.valeria.science/fr/index.html).
 
 ## Preservation
 
 ![DMP Assistant - Preservation](../img/dmp-guide/dmp-preservation.png)
 
+<!-- prettier-ignore -->
 !!! note
     Data and metadata may be preserved through submission to a suitable open data repository. Please see the [Data Repository Documentation](../data-repository-documentation/introduction.md) for further details.
 
@@ -57,18 +72,21 @@ For recommendations and more information about how to name your files, please se
 ![DMP Assistant - Sharing and Reuse 1](../img/dmp-guide/dmp-sharing-and-reuse-1.png)
 ![DMP Assistant - Sharing and Reuse 2](../img/dmp-guide/dmp-sharing-and-reuse-2.png)
 
-CIOOS provides detailed descriptions and in some cases examples for these questions. 
+CIOOS provides detailed descriptions and in some cases examples for these questions.
 
-If you plan to make your data open it is beneficial to adopt a formal open data license to ensure that you are appropriately attributed when others use your data and to ensure that your data are used in ways you're comfortable with. For more informaion please see [Open data Licenses](4-open-licensing.md).
-   
+If you plan to make your data open it is beneficial to adopt a formal open data license to ensure that you are appropriately attributed when others use your data and to ensure that your data are used in ways you're comfortable with. For more information please see [Open data Licenses](4-open-licensing.md).
+
 ## Responsibilities and Resources
 
 ![DMP Assistant - Responsibilities and Resources](../img/dmp-guide/dmp-responsibilities-and-resources.png)
 
 - Who will be responsible for managing this project's research outputs during and after the project? Please list the data management-specific tasks for which project contributors will be responsible.
 - How will responsibilities for managing data activities be handled if substantive changes happen in the personnel overseeing the project's data, including a change of Principal Investigator?
+
+<!-- prettier-ignore -->
 !!! note
     The TCA Data Management Accelerator is here to support you throughout the data management process, but ultimate responsiblity for the dataset should remain within your team.
+
 - What resources will you require to implement the management of your research outputs? What do you estimate the overall cost for this to be?
 
 ## Ethics and Legal Compliance
@@ -82,7 +100,10 @@ If you plan to make your data open it is beneficial to adopt a formal open data 
 - If applicable, what strategies will you undertake to address secondary uses of sensitive data?
 
 # Additional DMP Considerations for Sensitive Data
+
 ## Sharing and Reuse
+
 - What data cleaning and anonymization procedures will be required to protect the confidentiality of partitipants in your research?
 
 More detailed documentation is available through the [DMP Assistant website](https://dmp-pgd.ca/), which is built and maintained by the [Digital Research Alliance of Canada](https://alliancecan.ca/en).
+
