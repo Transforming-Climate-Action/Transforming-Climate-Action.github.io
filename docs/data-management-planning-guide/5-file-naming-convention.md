@@ -19,7 +19,7 @@ Files with a naming convention:
 
 - test_data_sample_0025_20250404.csv
 - bio_data_collection_20250404.csv
-- oxygen_optode_calc_v2_20250404.xls
+- oxygen_optode_calc_v02_20250404.xls
 - test_run_2_20250404.txt
 
 
