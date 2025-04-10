@@ -15,7 +15,7 @@ Examples of common proprietary formats that should be avoided when sharing and a
 
 The first step in identifying a suitable file format for your data is to reference the documentation for your chosen data repository. 
 
-1. In the case of generalist data repositories like the [Borealis Repository](../data-repository-documentation/borealis.md), any format is accepted. In cases like this you are encouraged to reference the section below on [Common Open Formats](2-file-formats.md#common-open-formats)
+1. In the case of generalist data repositories like the [Borealis Repository](../data-repository-documentation/borealis.md), any format is accepted. In cases like this you are encouraged to reference the section below on [Common Open Formats](file-formats.md#common-open-formats)
 2. In the case of specialized repositories like NCBI, they will often offer specific guidance on suitable formats. Sometimes these repositories may make use of highly specialized formats that are open, but specific to the types of data the repository was designed to handle. Please see the [Data repository documentation](../data-repository-documentation/introduction.md) for more information.
 
 ## Common Open Formats
