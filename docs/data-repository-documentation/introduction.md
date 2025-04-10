@@ -6,12 +6,6 @@ This section in the documentation is intended to give an overview of recommended
   * CIOOS Atlantic
 * Borealis
 * NCBI
-* SOCAT
 * OCADS
-* GLODAP
 * OTN
-* Le Base de Données en Patrimoine
-* Transcrire la Nouvelle-France
-* DalSpace (Dal)
-* Sémaphore (UQAR)
 * Zenodo
