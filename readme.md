@@ -1,3 +1,5 @@
+[![ci](https://github.com/Transforming-Climate-Action/Transforming-Climate-Action.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/Transforming-Climate-Action/Transforming-Climate-Action.github.io/actions/workflows/ci.yml) [![pages-build-deployment](https://github.com/Transforming-Climate-Action/Transforming-Climate-Action.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Transforming-Climate-Action/Transforming-Climate-Action.github.io/actions/workflows/pages/pages-build-deployment)
+
 # TCA Data Management Accelerator Documentation Hub
 
 Welcome to the TCA Data Management Accelerator Documentation Hub!
@@ -22,4 +24,3 @@ To build a new version for deployment run `mkdocs build`. The generated HTML wil
 The documentation hub can be expanded according to the official mkdocs documentation, found here: https://www.mkdocs.org/getting-started/#adding-pages
 
 Diagrams are created using Pencil: https://pencil.evolus.vn/. Note: when creating or modifying diagrams, both the Pencil `.epgz` file and the resulting image should be included in the repository, in the same location. This allows for future maintenance and updates.
-
