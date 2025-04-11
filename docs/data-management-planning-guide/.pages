@@ -1,0 +1,11 @@
+nav:
+    - starting-a-data-management-plan.md
+    - write-plan-overview.md
+    - file-formats.md
+    - documentation-and-metadata.md
+    - backup-strategy.md
+    - the-3-2-1-rule.md
+    - open-licensing.md
+    - file-naming-convention.md
+    - DMA-support.md
+    - ...
