@@ -4,6 +4,10 @@ This section in the DMP Assistant represents the core of your data management pl
 
 If you haven't initiated your data management plan in the DMP Assistant yet, please see [Starting a Data Management Plan](starting-a-data-management-plan.md)
 
+**If you haven't yet decided which data repositories you're planning to use for your datasets you should consider making that choice before developing your data management plan.** In many cases(such as metadata standards), your chosen data repository will dictate your answers. 
+
+For support choosing a data repository please visit [Choosing a Repository](../data-repository-documentation/introduction.md#choosing-a-repository)
+
 ## Project Outputs
 
 ![DMP Assistant - Project Outputs](../img/dmp-guide/dmp-project-outputs.png)
