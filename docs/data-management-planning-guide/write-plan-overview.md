@@ -66,10 +66,10 @@ If you plan to make your data open it is beneficial to adopt a formal open data 
 ![DMP Assistant - Responsibilities and Resources](../img/dmp-guide/dmp-responsibilities-and-resources.png)
 !!! note
     The TCA Data Management Accelerator is here to support you throughout the data management process, but ultimate responsiblity for the dataset should remain within your team.
-- Who will be responsible for managing this project's research outputs during and after the project? Please list the data management-specific tasks for which project contributors will be responsible. For more detail on the ways that the TCA Data Management Accelerator can support you please see [twerka berka]()
-- How will responsibilities for managing data activities be handled if substantive changes happen in the personnel overseeing the project's data, including a change of Principal Investigator?
+- Who will be responsible for managing this project's research outputs during and after the project? Please list the data management-specific tasks for which project contributors will be responsible. 
 !!! note
-    The TCA Data Management Accelerator is here to support you throughout the data management process, but ultimate responsiblity for the dataset should remain within your team.
+    For more detail on the ways that the TCA Data Management Accelerator can support you please see [Data Management Accelerator Support](DMA-support.md)
+- How will responsibilities for managing data activities be handled if substantive changes happen in the personnel overseeing the project's data, including a change of Principal Investigator?
 - What resources will you require to implement the management of your research outputs? What do you estimate the overall cost for this to be?
 
 ## Ethics and Legal Compliance
