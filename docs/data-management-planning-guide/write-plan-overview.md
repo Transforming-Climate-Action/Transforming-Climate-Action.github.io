@@ -2,7 +2,11 @@
 
 This section in the DMP Assistant represents the core of your data management plan. There are a number of key considerations that can greatly strengthen your data management plan. Wherever possible, additional information and recommendations are provided for each of the sections described below.
 
-If you haven't initiated your data management plan in the DMP Assistant yet, please see [Starting a Data Management Plan](0-starting-a-data-management-plan.md)
+If you haven't initiated your data management plan in the DMP Assistant yet, please see [Starting a Data Management Plan](starting-a-data-management-plan.md)
+
+**If you haven't yet decided which data repositories you're planning to use for your datasets you should consider making that choice before developing your data management plan.** In many cases(such as metadata standards), your chosen data repository will dictate your answers. 
+
+For support choosing a data repository please visit [Choosing a Repository](../data-repository-documentation/introduction.md#choosing-a-repository)
 
 ## Project Outputs
 
@@ -18,14 +22,14 @@ This section also asks about Essential Ocean Variables (EOVs) and Essential Clim
 
 ### What file formats will your research outputs be in?
 
-For recommendations and more information please see the [File Formats](2-file-formats.md) page.
+For recommendations and more information please see the [File Formats](file-formats.md) page.
 
 ## Documentation and Metadata
 
 ![DMP Assistant - Documentation and Metadata 1](../img/dmp-guide/dmp-documentation-and-metadata-1.png)
 ![DMP Assistant - Documentation and Metadata 2](../img/dmp-guide/dmp-documentation-and-metadata-2.png)
 
-For recommendations and more information about choosing a metadata standard, please see the [Documentation and Metadata](3-documentation-and-metadata.md)
+For recommendations and more information about choosing a metadata standard, please see the [Documentation and Metadata](documentation-and-metadata.md)
 
 ## Storage and Backup
 
@@ -34,7 +38,7 @@ For recommendations and more information about choosing a metadata standard, ple
 
 ### How and where will your research outputs be stored and backed up during the active phase of the research project?
 
-For recommendations and more information on how to back up your research outputs, please see the [Data Backup Strategy](4-backup-strategy.md).
+For recommendations and more information on how to back up your research outputs, please see the [Data Backup Strategy](backup-strategy.md).
 
 <!-- prettier-ignore -->
 !!! note
@@ -42,7 +46,7 @@ For recommendations and more information on how to back up your research outputs
 
 ### What collaboration environment and procedures will the research team use to access, modify and contribute data or other research outputs throughout the active phase of the project? How will you organize, name and version-control files in a (shared) directory?
 
-For recommendations and more information about how to name your files, please see the [File Naming Convention](5-file-naming-convention.md).
+For recommendations and more information about how to name your files, please see the [File Naming Convention](file-naming-convention.md).
 
 <!-- prettier-ignore -->
 !!! note
@@ -74,19 +78,45 @@ VALERIA is available to all Laval University researchers and their collaborators
 
 CIOOS provides detailed descriptions and in some cases examples for these questions.
 
-If you plan to make your data open it is beneficial to adopt a formal open data license to ensure that you are appropriately attributed when others use your data and to ensure that your data are used in ways you're comfortable with. For more information please see [Open data Licenses](4-open-licensing.md).
+If you plan to make your data open it is beneficial to adopt a formal open data license to ensure that you are appropriately attributed when others use your data and to ensure that your data are used in ways you're comfortable with. For more information please see [Open data Licenses](open-licensing.md).
 
 ## Responsibilities and Resources
 
 ![DMP Assistant - Responsibilities and Resources](../img/dmp-guide/dmp-responsibilities-and-resources.png)
 
-- Who will be responsible for managing this project's research outputs during and after the project? Please list the data management-specific tasks for which project contributors will be responsible.
-- How will responsibilities for managing data activities be handled if substantive changes happen in the personnel overseeing the project's data, including a change of Principal Investigator?
+### Example Data Management Workflow
 
-<!-- prettier-ignore -->
+``` mermaid
+journey
+    section Data Collection
+        Initial data collection: 5: Researcher
+        Metadata capture: 5: Researcher, Institutional Data Manager
+    section Operational Data Management
+        Convert data into usable format: 5: Researcher, Institutional Data Manager
+        Record metadata into a file: 5: Researcher, Institutional Data Manager
+        Store & organize data: 5: Researcher, Institutional Data Manager
+        Create backup of data: 5: Institutional Data Manager
+        Apply automated QA/QC pipeline: 5: Institutional Data Manager, CIOOS Support
+    section Master Data Management
+        Convert data into standard format: 5: Institutional Data Manager, CIOOS Support
+        Convert metadata into standard format: 5: Institutional Data Manager, CIOOS Support
+        
+```
+
+### Key Roles and Responsibilities
+
+| Role      | Description                          |
+| ----------- | ------------------------------------ |
+| Responsible for data       | The person on your team who is responsible for your data. This is the person who will liase with the data management accelerator  |
+| Operational data management       | The people who will carry out your operational data management. This includes: conversion of data into a usable format, naming, organization, and storage of the data, backup of the data, QA/QC of the data. These roles may be split between members of your team and your institutional data manager. If you plan to share these roles with your institutional data manager this section should be developed in collaboration with the institutional data manager. |
+| Master data management    | This represents the work to standardize your data and prepare it for long-term archival, or submission to an open data repository. If desired, this work can be supported by the Data Management Accelerator. If you plan to request support from the Data Management Accelerator this secction should be developed in collaboration with your institutional data manager. |
+
 !!! note
-    The TCA Data Management Accelerator is here to support you throughout the data management process, but ultimate responsiblity for the dataset should remain within your team.
-
+    The TCA Data Management Accelerator is here to support you throughout the data management process, but ultimate responsiblity for your datasets should remain within your team.
+- Who will be responsible for managing this project's research outputs during and after the project? Please list the data management-specific tasks for which project contributors will be responsible. 
+!!! note
+    For more detail on the ways that the TCA Data Management Accelerator can support you please see [Data Management Accelerator Support](DMA-support.md)
+- How will responsibilities for managing data activities be handled if substantive changes happen in the personnel overseeing the project's data, including a change of Principal Investigator?
 - What resources will you require to implement the management of your research outputs? What do you estimate the overall cost for this to be?
 
 ## Ethics and Legal Compliance

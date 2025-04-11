@@ -10,16 +10,16 @@ Backing up research data is a critical part of responsible data management. It s
 
 ## How to Back Up Data
 
-A reliable backup strategy is essential for preserving the integrity and availability of your research data. The most widely recommended approach is the [3-2-1 Backup Rule](/docs/data-management-planning-guide/4a-the-3-2-1-rule.md), which offers a simple and effective way to safeguard against data loss.
+A reliable backup strategy is essential for preserving the integrity and availability of your research data. The most widely recommended approach is the [3-2-1 Backup Rule](the-3-2-1-rule.md), which offers a simple and effective way to safeguard against data loss.
 
 **Follow these steps to back up your data effectively:**
 
 1.  **Identify Data to Back Up**
 
     - Determine which types of data are essential to back up. This typically includes raw data, processed data, analysis results, documentation, and metadata.
-    - Organize and label your files clearly so that critical data is easy to identify and locate. For more guidance, see the [file-naming-convention](/docs/data-management-planning-guide/5-file-naming-convention.md) for more details.
+    - Organize and label your files clearly so that critical data is easy to identify and locate. For more guidance, see the [file-naming-convention]file-naming-convention.md) for more details.
 
-2.  **Apply [the 3-2-1 Rule for Data Backup](/docs/data-management-planning-guide/4a-the-3-2-1-rule.md)**
+2.  **Apply [the 3-2-1 Rule for Data Backup](the-3-2-1-rule.md)**
 
 3.  **Automate and Schedule Regular Backups**
 

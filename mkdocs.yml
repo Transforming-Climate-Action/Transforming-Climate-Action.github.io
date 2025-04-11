@@ -2,6 +2,8 @@ site_name: TCA Data Management Accelerator Documentation Hub
 site_url: http://127.0.0.1:8000/
 theme:
   name: material
+  # palette:
+  #   scheme: default
 plugins:
   - awesome-pages
 markdown_extensions:
@@ -9,3 +11,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
