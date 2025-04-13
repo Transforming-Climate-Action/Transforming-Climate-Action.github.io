@@ -4,7 +4,7 @@ This section in the DMP Assistant represents the core of your data management pl
 
 If you haven't initiated your data management plan in the DMP Assistant yet, please see [Starting a Data Management Plan](starting-a-data-management-plan.md)
 
-**If you haven't yet decided which data repositories you're planning to use for your datasets you should consider making that choice before developing your data management plan.** In many cases(such as metadata standards), your chosen data repository will dictate your answers. 
+**If you haven't yet decided which data repositories you're planning to use for your datasets you should consider making that choice before developing your data management plan.** In many cases(such as metadata standards), your chosen data repository will dictate your answers.
 
 For support choosing a data repository please visit [Choosing a Repository](../data-repository-documentation/introduction.md#choosing-a-repository)
 
@@ -86,36 +86,57 @@ If you plan to make your data open it is beneficial to adopt a formal open data 
 
 ### Example Data Management Workflow
 
-``` mermaid
-journey
-    section Data Collection
-        Initial data collection: 5: Researcher
-        Metadata capture: 5: Researcher, Institutional Data Manager
-    section Operational Data Management
-        Convert data into usable format: 5: Researcher, Institutional Data Manager
-        Record metadata into a file: 5: Researcher, Institutional Data Manager
-        Store & organize data: 5: Researcher, Institutional Data Manager
-        Create backup of data: 5: Institutional Data Manager
-        Apply automated QA/QC pipeline: 5: Institutional Data Manager, CIOOS Support
-    section Master Data Management
-        Convert data into standard format: 5: Institutional Data Manager, CIOOS Support
-        Convert metadata into standard format: 5: Institutional Data Manager, CIOOS Support
-        
+```mermaid
+flowchart TD
+    subgraph DC[Data Collection]
+        A1[Initial data collection]
+        A2[Metadata capture]
+    end
+
+    subgraph ODM[Operational Data Management]
+        B1[Convert data into usable format]
+        B2[Record metadata into a file]
+        B3[Store & organize data]
+        B4[Create backup of data]
+        B5[Apply automated QA/QC pipeline]
+    end
+
+    subgraph MDM[Master Data Management]
+        C1[Convert data into standard format]
+        C2[Convert metadata into standard format]
+    end
+
+    DC --> ODM
+    ODM --> MDM
+
+    %% Data Collection flow
+    A1 --> A2
+
+    %% Operational Data Management flow
+    B1 --> B2
+    B2 --> B3
+    B3 --> B4
+    B4 --> B5
+
+    %% Master Data Management flow
+    C1 --> C2
+
 ```
 
 ### Key Roles and Responsibilities
 
-| Role      | Description                          |
-| ----------- | ------------------------------------ |
-| Responsible for data       | The person on your team who is responsible for your data. This is the person who will liase with the data management accelerator  |
-| Operational data management       | The people who will carry out your operational data management. This includes: conversion of data into a usable format, naming, organization, and storage of the data, backup of the data, QA/QC of the data. These roles may be split between members of your team and your institutional data manager. If you plan to share these roles with your institutional data manager this section should be developed in collaboration with the institutional data manager. |
-| Master data management    | This represents the work to standardize your data and prepare it for long-term archival, or submission to an open data repository. If desired, this work can be supported by the Data Management Accelerator. If you plan to request support from the Data Management Accelerator this secction should be developed in collaboration with your institutional data manager. |
+| Role                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Responsible for data        | The person on your team who is responsible for your data. This is the person who will liase with the data management accelerator                                                                                                                                                                                                                                                                                                                                      |
+| Operational data management | The people who will carry out your operational data management. This includes: conversion of data into a usable format, naming, organization, and storage of the data, backup of the data, QA/QC of the data. These roles may be split between members of your team and your institutional data manager. If you plan to share these roles with your institutional data manager this section should be developed in collaboration with the institutional data manager. |
+| Master data management      | This represents the work to standardize your data and prepare it for long-term archival, or submission to an open data repository. If desired, this work can be supported by the Data Management Accelerator. If you plan to request support from the Data Management Accelerator this secction should be developed in collaboration with your institutional data manager.                                                                                            |
 
 !!! note
-    The TCA Data Management Accelerator is here to support you throughout the data management process, but ultimate responsiblity for your datasets should remain within your team.
-- Who will be responsible for managing this project's research outputs during and after the project? Please list the data management-specific tasks for which project contributors will be responsible. 
-!!! note
-    For more detail on the ways that the TCA Data Management Accelerator can support you please see [Data Management Accelerator Support](DMA-support.md)
+The TCA Data Management Accelerator is here to support you throughout the data management process, but ultimate responsiblity for your datasets should remain within your team.
+
+- Who will be responsible for managing this project's research outputs during and after the project? Please list the data management-specific tasks for which project contributors will be responsible.
+  !!! note
+  For more detail on the ways that the TCA Data Management Accelerator can support you please see [Data Management Accelerator Support](DMA-support.md)
 - How will responsibilities for managing data activities be handled if substantive changes happen in the personnel overseeing the project's data, including a change of Principal Investigator?
 - What resources will you require to implement the management of your research outputs? What do you estimate the overall cost for this to be?
 
@@ -136,4 +157,3 @@ journey
 - What data cleaning and anonymization procedures will be required to protect the confidentiality of partitipants in your research?
 
 More detailed documentation is available through the [DMP Assistant website](https://dmp-pgd.ca/), which is built and maintained by the [Digital Research Alliance of Canada](https://alliancecan.ca/en).
-
