@@ -120,7 +120,6 @@ flowchart TD
 
     %% Master Data Management flow
     C1 --> C2
-
 ```
 
 ### Key Roles and Responsibilities
@@ -131,12 +130,16 @@ flowchart TD
 | Operational data management | The people who will carry out your operational data management. This includes: conversion of data into a usable format, naming, organization, and storage of the data, backup of the data, QA/QC of the data. These roles may be split between members of your team and your institutional data manager. If you plan to share these roles with your institutional data manager this section should be developed in collaboration with the institutional data manager. |
 | Master data management      | This represents the work to standardize your data and prepare it for long-term archival, or submission to an open data repository. If desired, this work can be supported by the Data Management Accelerator. If you plan to request support from the Data Management Accelerator this secction should be developed in collaboration with your institutional data manager.                                                                                            |
 
+<!-- prettier-ignore -->
 !!! note
-The TCA Data Management Accelerator is here to support you throughout the data management process, but ultimate responsiblity for your datasets should remain within your team.
+    The TCA Data Management Accelerator is here to support you throughout the data management process, but ultimate responsiblity for your datasets should remain within your team.
 
 - Who will be responsible for managing this project's research outputs during and after the project? Please list the data management-specific tasks for which project contributors will be responsible.
-  !!! note
-  For more detail on the ways that the TCA Data Management Accelerator can support you please see [Data Management Accelerator Support](DMA-support.md)
+
+<!-- prettier-ignore -->
+!!! note
+    For more detail on the ways that the TCA Data Management Accelerator can support you please see [Data Management Accelerator Support](DMA-support.md)
+
 - How will responsibilities for managing data activities be handled if substantive changes happen in the personnel overseeing the project's data, including a change of Principal Investigator?
 - What resources will you require to implement the management of your research outputs? What do you estimate the overall cost for this to be?
 
