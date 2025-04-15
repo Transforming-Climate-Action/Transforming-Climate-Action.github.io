@@ -80,6 +80,8 @@ CIOOS provides detailed descriptions and in some cases examples for these questi
 
 If you plan to make your data open it is beneficial to adopt a formal open data license to ensure that you are appropriately attributed when others use your data and to ensure that your data are used in ways you're comfortable with. For more information please see [Open data Licenses](open-licensing.md).
 
+If you're planning to release a dataset that others could benefit from, consider writing a [data paper](../data-repository-documentation/data-papers.md) to help raise awareness and encourage reuse.
+
 ## Responsibilities and Resources
 
 ![DMP Assistant - Responsibilities and Resources](../img/dmp-guide/dmp-responsibilities-and-resources.png)
