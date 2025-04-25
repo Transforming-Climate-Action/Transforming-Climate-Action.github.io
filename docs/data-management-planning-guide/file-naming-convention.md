@@ -26,3 +26,7 @@ Files with a naming convention:
 There is no single file naming convention (FNC) that fits all projects or datasets. However, you can follow general best practices to design an effective convention that suits your specific needs.
 
 For more guidance on what to follow or avoid when naming files, refer to this helpful article: [Ten Rules for Best Practice File Naming](https://exadox.com/en/articles/file-naming-convention-ten-rules-best-practice)
+
+## Additional resources
+
+How to tidy up your data: [Tidy Data](docs/data-management-planning-guide/tidy-data.md)
