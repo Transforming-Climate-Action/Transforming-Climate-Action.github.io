@@ -29,4 +29,4 @@ For more guidance on what to follow or avoid when naming files, refer to this he
 
 ## Additional resources
 
-How to tidy up your data: [Tidy Data](docs/data-management-planning-guide/tidy-data.md)
+How to tidy up your data: [Tidy Data](tidy-data.md)

@@ -36,4 +36,4 @@ Common widely-used open data formats:
 
 ## Additional resources
 
-How to tidy up your data: [Tidy Data](docs/data-management-planning-guide/tidy-data.md)
+How to tidy up your data: [Tidy Data](tidy-data.md)
