@@ -41,13 +41,13 @@ For recommendations and more information about choosing a metadata standard, ple
 For recommendations and more information on how to back up your research outputs, please see the [Data Backup Strategy](backup-strategy.md).
 
 #### Storage Solutions
+
 If safe, secure, redundant near-term data storage represents a gap in your project there are a number of options available to support you:
 
 <!-- prettier-ignore -->
 ##### Digital Research Alliance of Canada
 
 The Digital Research Alliance of Canada makes computing resources available to Canadian researchers free of charge. To access DRA resources, submit an [Application for the Digital Research Alliance of Canada Rapid Access Service.](https://docs.google.com/forms/d/e/1FAIpQLSeU_BoRk5cEz3AvVLf3e9yZJq-OvcFCQ-mg7p4AWXmUkd5rTw/viewform) For data storage requirements up to 10 terabytes applications are typically processed very quickly. [Additional details available here.](https://www.alliancecan.ca/en/services/advanced-research-computing/accessing-resources/rapid-access-service) If you have any questions please reach out to the data management accelerator at [insert address]
-
 
 ##### VALERIA - Laval University Storage Solution
 
@@ -60,7 +60,11 @@ The Digital Research Alliance of Canada makes computing resources available to C
 
 VALERIA is available to all Laval University researchers and their collaborators. For detailed information about features, setup guides, and best practices, visit the [VALERIA documentation website](https://doc.s3.valeria.science/fr/index.html).
 
+For TCA researchers specifically, the [TCA file sharing platform](ulaval-file-sharing.md) provides a complementary solution for sharing actively worked-on data with collaborators both within and outside the TCA program.
+
 ### What collaboration environment and procedures will the research team use to access, modify and contribute data or other research outputs throughout the active phase of the project? How will you organize, name and version-control files in a (shared) directory?
+
+For actively worked-on data that needs to be shared with collaborators within and outside the TCA program, consider using the [TCA file sharing platform](ulaval-file-sharing.md) hosted at Laval University. This platform is designed for data still being processed or analyzed and provides reliable file sharing without requiring accounts for downloads.
 
 For recommendations and more information about how to name your files, please see the [File Naming Convention](file-naming-convention.md).
 

@@ -15,23 +15,19 @@ A reliable backup strategy is essential for preserving the integrity and availab
 **Follow these steps to back up your data effectively:**
 
 1.  **Identify Data to Back Up**
-
     - Determine which types of data are essential to back up. This typically includes raw data, processed data, analysis results, documentation, and metadata.
     - Organize and label your files clearly so that critical data is easy to identify and locate. For more guidance, see the [file-naming-convention]file-naming-convention.md) for more details.
 
 2.  **Apply [the 3-2-1 Rule for Data Backup](the-3-2-1-rule.md)**
 
 3.  **Automate and Schedule Regular Backups**
-
     - Set up automated backups using tools to reduce the risk of manual errors.
     - Back up your data according to the nature of your work: daily during active data collection or analysis, and weekly or biweekly for more stable datasets.
 
 4.  **Document Your Backup Plan**
-
     - Maintain a record of where each copy is stored, who is responsible, and how frequently backups occur.
 
 5.  **Test and Review**
-
     - Periodically verify that backups are working and data can be restored.
     - Update your strategy as your data grows or research needs change.
 
@@ -47,9 +43,11 @@ When data—including metadata, raw data, and processed data—is collected by t
 
 - Simultaneously, a third-party software tool automates the daily transfer of new data to a remote VPS hosted by the Digital Research Alliance of Canada for secure off-site backup.
 
-## Suggested open-source tools
+## Suggested tools and platforms
 
 Use an [incremental strategy](https://en.wikipedia.org/wiki/Incremental_backup) to backup your data _ideally daily_. These tools can help you implement a backup strategy that meets the 3-2-1 rule.
+
+### Open-source backup tools
 
 - [rsync](https://fr.wikipedia.org/wiki/Rsync)
 
@@ -58,3 +56,7 @@ Use an [incremental strategy](https://en.wikipedia.org/wiki/Incremental_backup) 
 - [Duplicati](https://www.duplicati.com/)
 
 - [Syncthing](https://syncthing.net/)
+
+### Collaboration and file sharing
+
+For TCA researchers sharing actively worked-on data with collaborators, the [TCA file sharing platform](ulaval-file-sharing.md) hosted at Laval University provides a reliable solution with incremental backup systems in development to prevent accidental deletion or data loss.
