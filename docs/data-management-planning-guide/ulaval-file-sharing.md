@@ -12,6 +12,5 @@ The platform is designed for data still being processed or analyzed, not for lon
 
 - Hosted on [VALERIA](https://valeria.science/), Laval University's cloud computing platform
 - Optional file encryption available upon request (e.g., password-protected zip files)
-- Incremental backup system in development to prevent accidental deletion or data loss is being actively worked on
+- Incremental backup system currently in development to prevent accidental deletion or data loss
 - Public access with link sharing - no account required for downloads
-- Please contact the TCA Data Management team for assistance with uploading or managing files
