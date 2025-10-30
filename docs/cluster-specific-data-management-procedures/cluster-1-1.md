@@ -33,23 +33,26 @@ flowchart TD
 #### Step-by-Step Process
 
 1. Identify who on your team will be responsible for the data from the cruise. For the remainder of this document this individual will be referred to as the "data lead"
-   <!-- prettier-ignore -->
-   !!! note
-       Identifying a responsible individual ensures that someone will be accountable for the process and creates an opportunity for them to receive support from the TCA Data Management Accelerator.
+
+<!-- prettier-ignore -->
+!!! note
+    Identifying a responsible individual ensures that someone will be accountable for the process and creates an opportunity for them to receive support from the TCA Data Management Accelerator.
 
 2. Introduce the data lead to the data steward for your institution so the institutional data steward can support your work.
 
 3. Prior to the start of the cruise the data lead should start an entry in the [CIOOS Metadata Entry Tool](https://cioos-siooc.github.io/metadata-entry-form/#/en/region-select)
-   <!-- prettier-ignore -->
-   !!! note
-       Entries can be edited and updated at anytime. Starting an entry early makes it possible to capture information throughout the cruise preparation process. Working in this way is much easier than trying to remember key details after the completion of the cruise.
+
+<!-- prettier-ignore -->
+!!! note
+    Entries can be edited and updated at anytime. Starting an entry early makes it possible to capture information throughout the cruise preparation process. Working in this way is much easier than trying to remember key details after the completion of the cruise.
 
 4. Add information to the entry in the [CIOOS Metadata Entry Tool](https://cioos-siooc.github.io/metadata-entry-form/#/en/region-select) as it becomes available through the process of preparing for the cruise.
 
 5. Request training on how to submit data to the [File Sharing Platform Hosted at Laval University](../data-management-planning-guide/ulaval-file-sharing.md)
-   <!-- prettier-ignore -->
-   !!! note
-       The [File Sharing Platform Hosted at Laval University](../data-management-planning-guide/ulaval-file-sharing.md) has been selected as the standard data storage solution for this cluster. This is intended as temporary storage, prior to submission to CIOOS.
+
+<!-- prettier-ignore -->
+!!! note
+    The [File Sharing Platform Hosted at Laval University](../data-management-planning-guide/ulaval-file-sharing.md) has been selected as the standard data storage solution for this cluster. This is intended as temporary storage, prior to submission to CIOOS.
 
 ### During the Cruise
 
@@ -63,9 +66,9 @@ flowchart TD
    - Personnel involved in data collection
    - Data file naming and organization used
 
-   <!-- prettier-ignore -->
-   !!! warning
-       Trying to recall details after the fact is error prone
+<!-- prettier-ignore -->
+!!! warning
+    Trying to recall details after the fact is error prone
 
 ### After the Cruise
 
@@ -98,6 +101,7 @@ flowchart LR
    - Publishing data in an open data repository increases the visibility, reach, and potential impact of your work and may lead to new opportunities for collaboration
    - Contributing to the open data ecosystem benefits all ocean users
    - See the [CIOOS Data Management Resources page](https://cioos.ca/data-management-resources/) for additional information about the benefits of contributing data to CIOOS
-     <!-- prettier-ignore -->
-     !!! note
-         CIOOS has been selected as the standard data repository for cruise data in cluster 1.1
+
+<!-- prettier-ignore -->
+!!! note
+    CIOOS has been selected as the standard data repository for cruise data in cluster 1.1
