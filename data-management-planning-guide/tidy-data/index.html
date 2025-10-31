@@ -1,0 +1,2135 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="http://127.0.0.1:8000/data-management-planning-guide/tidy-data/">
+      
+      
+        <link rel="prev" href="../DMA-support/">
+      
+      
+        <link rel="next" href="../ulaval-file-sharing/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
+    
+    
+      
+        <title>Tidy Data: Principles and Practice - TCA Data Management Accelerator Documentation Hub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tidy-data-principles-and-practice" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TCA Data Management Accelerator Documentation Hub" class="md-header__button md-logo" aria-label="TCA Data Management Accelerator Documentation Hub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TCA Data Management Accelerator Documentation Hub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tidy Data: Principles and Practice
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TCA Data Management Accelerator Documentation Hub" class="md-nav__button md-logo" aria-label="TCA Data Management Accelerator Documentation Hub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TCA Data Management Accelerator Documentation Hub
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to the Documentation Hub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data management planning guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Data management planning guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../starting-a-data-management-plan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Start a Data Management Plan
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../write-plan-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DMP Asisstant - Write Plan Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file-formats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Formats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation-and-metadata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentation and Metadata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backup-strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Backup Strategy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../the-3-2-1-rule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3-2-1 Rule for Data Backup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-licensing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Open Data Licenses
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file-naming-convention/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Naming Convention
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DMA-support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TCA Data Management Accelerator Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Tidy Data: Principles and Practice
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Tidy Data: Principles and Practice
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-untidy-data-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Untidy Data Scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Untidy Data Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-1-column-headers-are-values-not-variable-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 1: Column Headers Are Values, Not Variable Names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-2-multiple-variables-in-a-single-column" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 2: Multiple Variables in a Single Column
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-3-variables-stored-in-both-rows-and-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 3: Variables Stored in Both Rows and Columns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ulaval-file-sharing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File Sharing Platform Hosted at Laval University
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data repository documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Data repository documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-repository-documentation/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-repository-documentation/cioos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CIOOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-repository-documentation/OTN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OTN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-repository-documentation/NCBI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NCBI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-repository-documentation/OCADS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OCADS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-repository-documentation/borealis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Borealis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-repository-documentation/data-papers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Papers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-repository-documentation/zenodo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Zenodo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cluster specific data management procedures
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Cluster specific data management procedures
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cluster-specific-data-management-procedures/cluster-1-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cluster 1.1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data publication guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Data publication guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-publication-guide/image-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Image Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../useful-resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Useful Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-untidy-data-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Untidy Data Scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Untidy Data Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-1-column-headers-are-values-not-variable-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 1: Column Headers Are Values, Not Variable Names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-2-multiple-variables-in-a-single-column" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 2: Multiple Variables in a Single Column
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scenario-3-variables-stored-in-both-rows-and-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario 3: Variables Stored in Both Rows and Columns
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="tidy-data-principles-and-practice">Tidy Data: Principles and Practice</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Tidy data is a standardized approach to organizing datasets where:</p>
+<ol>
+<li>Each variable forms a column</li>
+<li>Each observation forms a row</li>
+<li>Each value occupies a single cell</li>
+</ol>
+<p>These principles create a consistent and logical structure that
+simplifies data analysis, visualization, and manipulation. When data is
+tidy, it works seamlessly with data analysis tools and facilitates more
+efficient analysis workflows.</p>
+<p>In the following sections, we’ll explore common untidy data scenarios
+and demonstrate techniques to transform them into tidy formats. While
+not exhaustive, these examples illustrate the fundamental principles of
+tidy data transformation.</p>
+<!-- prettier-ignore -->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The examples presented here use truncated datasets for clarity and readability.</p>
+</div>
+<h2 id="common-untidy-data-scenarios">Common Untidy Data Scenarios</h2>
+<h3 id="scenario-1-column-headers-are-values-not-variable-names">Scenario 1: Column Headers Are Values, Not Variable Names</h3>
+<p>This dataset from the Pew Research Center contains the number of people
+in each income group for various religions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">religion</th>
+<th style="text-align: right;">\&lt;\$10k</th>
+<th style="text-align: right;">\$10-20k</th>
+<th style="text-align: right;">\$20-30k</th>
+<th style="text-align: right;">\$30-40k</th>
+<th style="text-align: right;">\$40-50k</th>
+<th style="text-align: right;">\$50-75k</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Agnostic</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">137</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atheist</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr>
+<td style="text-align: left;">Buddhist</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">58</td>
+</tr>
+<tr>
+<td style="text-align: left;">Catholic</td>
+<td style="text-align: right;">418</td>
+<td style="text-align: right;">617</td>
+<td style="text-align: right;">732</td>
+<td style="text-align: right;">670</td>
+<td style="text-align: right;">638</td>
+<td style="text-align: right;">1116</td>
+</tr>
+<tr>
+<td style="text-align: left;">Don’t know/refused</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr>
+<td style="text-align: left;">Evangelical Prot</td>
+<td style="text-align: right;">575</td>
+<td style="text-align: right;">869</td>
+<td style="text-align: right;">1064</td>
+<td style="text-align: right;">982</td>
+<td style="text-align: right;">881</td>
+<td style="text-align: right;">1486</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hindu</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr>
+<td style="text-align: left;">Historically Black Prot</td>
+<td style="text-align: right;">228</td>
+<td style="text-align: right;">244</td>
+<td style="text-align: right;">236</td>
+<td style="text-align: right;">238</td>
+<td style="text-align: right;">197</td>
+<td style="text-align: right;">223</td>
+</tr>
+<tr>
+<td style="text-align: left;">Jehovah’s Witness</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: left;">Jewish</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">95</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mainline Prot</td>
+<td style="text-align: right;">289</td>
+<td style="text-align: right;">495</td>
+<td style="text-align: right;">619</td>
+<td style="text-align: right;">655</td>
+<td style="text-align: right;">651</td>
+<td style="text-align: right;">1107</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mormon</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: right;">112</td>
+</tr>
+<tr>
+<td style="text-align: left;">Muslim</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orthodox</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">47</td>
+</tr>
+<tr>
+<td style="text-align: left;">Other Christian</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">Other Faiths</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">63</td>
+</tr>
+<tr>
+<td style="text-align: left;">Other World Religions</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unaffiliated</td>
+<td style="text-align: right;">217</td>
+<td style="text-align: right;">299</td>
+<td style="text-align: right;">374</td>
+<td style="text-align: right;">365</td>
+<td style="text-align: right;">341</td>
+<td style="text-align: right;">528</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Problem:</strong> The column names represent <em>values</em> of an income variable
+rather than distinct variables themselves.</p>
+<p><strong>Solution:</strong> We need to pivot the data to create two new columns:</p>
+<ul>
+<li><code>income</code>: Contains the income groups (previously column names)</li>
+<li><code>frequency</code>: Contains the count of people (previously cell values)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">religion</th>
+<th style="text-align: left;">income</th>
+<th style="text-align: right;">frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Agnostic</td>
+<td style="text-align: left;">\&lt;\$10k</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td style="text-align: left;">Agnostic</td>
+<td style="text-align: left;">\$10-20k</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr>
+<td style="text-align: left;">Agnostic</td>
+<td style="text-align: left;">\$20-30k</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td style="text-align: left;">Agnostic</td>
+<td style="text-align: left;">\$30-40k</td>
+<td style="text-align: right;">81</td>
+</tr>
+<tr>
+<td style="text-align: left;">Agnostic</td>
+<td style="text-align: left;">\$40-50k</td>
+<td style="text-align: right;">76</td>
+</tr>
+<tr>
+<td style="text-align: left;">Agnostic</td>
+<td style="text-align: left;">\$50-75k</td>
+<td style="text-align: right;">137</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atheist</td>
+<td style="text-align: left;">\&lt;\$10k</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atheist</td>
+<td style="text-align: left;">\$10-20k</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atheist</td>
+<td style="text-align: left;">\$20-30k</td>
+<td style="text-align: right;">37</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atheist</td>
+<td style="text-align: left;">\$30-40k</td>
+<td style="text-align: right;">52</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atheist</td>
+<td style="text-align: left;">\$40-50k</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr>
+<td style="text-align: left;">Atheist</td>
+<td style="text-align: left;">\$50-75k</td>
+<td style="text-align: right;">70</td>
+</tr>
+</tbody>
+</table>
+<p>After transformation, the dataset is tidy because each column represents
+a variable and each row represents an observation.</p>
+<h3 id="scenario-2-multiple-variables-in-a-single-column">Scenario 2: Multiple Variables in a Single Column</h3>
+<p>The <code>who</code>
+<a href="https://www.who.int/teams/global-tuberculosis-programme/data">dataset</a>
+contains information about tuberculosis cases across different
+countries:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">country</th>
+<th style="text-align: right;">year</th>
+<th style="text-align: right;">new_sp_m014</th>
+<th style="text-align: right;">new_sp_m1524</th>
+<th style="text-align: right;">new_sp_m2534</th>
+<th style="text-align: right;">new_sp_m3544</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Sao Tome and Principe</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Serbia &amp; Montenegro</td>
+<td style="text-align: right;">1995</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">204</td>
+<td style="text-align: right;">317</td>
+</tr>
+<tr>
+<td style="text-align: left;">Paraguay</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">188</td>
+<td style="text-align: right;">221</td>
+<td style="text-align: right;">143</td>
+</tr>
+<tr>
+<td style="text-align: left;">Canada</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">33</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bahamas</td>
+<td style="text-align: right;">2011</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">United Arab Emirates</td>
+<td style="text-align: right;">2012</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Problems:</strong></p>
+<ol>
+<li>Column names contain values, not variable names (similar to Scenario
+    1.</li>
+<li>Multiple variables are encoded in a single column name</li>
+</ol>
+<p><strong>Step 1:</strong> First, we pivot the dataset to address the column name
+issue:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">country</th>
+<th style="text-align: right;">year</th>
+<th style="text-align: left;">demographic</th>
+<th style="text-align: right;">cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Sao Tome and Principe</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: left;">new_sp_m014</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sao Tome and Principe</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: left;">new_sp_m1524</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sao Tome and Principe</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: left;">new_sp_m2534</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sao Tome and Principe</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: left;">new_sp_m3544</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Serbia &amp; Montenegro</td>
+<td style="text-align: right;">1995</td>
+<td style="text-align: left;">new_sp_m014</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Serbia &amp; Montenegro</td>
+<td style="text-align: right;">1995</td>
+<td style="text-align: left;">new_sp_m1524</td>
+<td style="text-align: right;">108</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 2:</strong> Next, we separate the <code>demographic</code> column into its
+component variables:</p>
+<ul>
+<li><code>method</code>: Diagnosis method (e.g., <code>new_sp</code> = new smear positive)</li>
+<li><code>sex</code>: Patient sex (m = male, f = female)</li>
+<li><code>age_group</code>: Patient age range</li>
+</ul>
+<p>Let’s analyze <code>new_sp_m014</code> from the first row:</p>
+<ul>
+<li><code>new_sp</code>: Method of diagnosis (other possibilities include <code>rel</code> =
+  relapse, <code>sn</code> = negative pulmonary smear)</li>
+<li><code>m</code>: Sex (male)</li>
+<li><code>014</code>: Age group (0-14 years)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">country</th>
+<th style="text-align: right;">year</th>
+<th style="text-align: left;">method</th>
+<th style="text-align: left;">sex</th>
+<th style="text-align: left;">age_group</th>
+<th style="text-align: right;">cases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Sao Tome and Principe</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: left;">new_sp</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">0-14</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sao Tome and Principe</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: left;">new_sp</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">15-24</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sao Tome and Principe</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: left;">new_sp</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">25-34</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sao Tome and Principe</td>
+<td style="text-align: right;">2006</td>
+<td style="text-align: left;">new_sp</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">35-44</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;">Serbia &amp; Montenegro</td>
+<td style="text-align: right;">1995</td>
+<td style="text-align: left;">new_sp</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">0-14</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Serbia &amp; Montenegro</td>
+<td style="text-align: right;">1995</td>
+<td style="text-align: left;">new_sp</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">15-24</td>
+<td style="text-align: right;">108</td>
+</tr>
+</tbody>
+</table>
+<p>With the data now tidy, we can easily analyze case counts by method,
+sex, and age group:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">method</th>
+<th style="text-align: left;">sex</th>
+<th style="text-align: left;">age_group</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">new_sp</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">0-14</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">new_sp</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">15-24</td>
+<td style="text-align: right;">113</td>
+</tr>
+<tr>
+<td style="text-align: left;">new_sp</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">25-34</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">new_sp</td>
+<td style="text-align: left;">m</td>
+<td style="text-align: left;">35-44</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scenario-3-variables-stored-in-both-rows-and-columns">Scenario 3: Variables Stored in Both Rows and Columns</h3>
+<p>The <code>temperature</code> dataset contains daily weather data from a Mexican
+weather station:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">id</th>
+<th style="text-align: right;">year</th>
+<th style="text-align: right;">month</th>
+<th style="text-align: left;">element</th>
+<th style="text-align: right;">d1</th>
+<th style="text-align: right;">d2</th>
+<th style="text-align: right;">d3</th>
+<th style="text-align: right;">d4</th>
+<th style="text-align: right;">d5</th>
+<th style="text-align: right;">d6</th>
+<th style="text-align: right;">d7</th>
+<th style="text-align: right;">d8</th>
+<th style="text-align: left;">d9</th>
+<th style="text-align: right;">d10</th>
+<th style="text-align: right;">d11</th>
+<th style="text-align: left;">d12</th>
+<th style="text-align: right;">d13</th>
+<th style="text-align: right;">d14</th>
+<th style="text-align: right;">d15</th>
+<th style="text-align: right;">d16</th>
+<th style="text-align: right;">d17</th>
+<th style="text-align: left;">d18</th>
+<th style="text-align: left;">d19</th>
+<th style="text-align: left;">d20</th>
+<th style="text-align: left;">d21</th>
+<th style="text-align: left;">d22</th>
+<th style="text-align: right;">d23</th>
+<th style="text-align: left;">d24</th>
+<th style="text-align: right;">d25</th>
+<th style="text-align: right;">d26</th>
+<th style="text-align: right;">d27</th>
+<th style="text-align: right;">d28</th>
+<th style="text-align: right;">d29</th>
+<th style="text-align: right;">d30</th>
+<th style="text-align: right;">d31</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tmax</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">27.8</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tmin</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">14.5</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">tmax</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">27.3</td>
+<td style="text-align: right;">24.1</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">29.7</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">29.9</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">tmin</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">14.4</td>
+<td style="text-align: right;">14.4</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">13.4</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">10.7</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">tmax</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">32.1</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">34.5</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">31.1</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">tmin</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">14.2</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">16.8</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">17.6</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">tmax</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">36.3</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">tmin</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">16.7</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">tmax</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">33.2</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: left;">tmin</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: left;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">18.2</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Problems:</strong></p>
+<ol>
+<li>Daily measurements are spread across columns (<code>d1</code> through <code>d31</code>)</li>
+<li>The <code>element</code> column contains two different variables (<code>tmin</code> and
+    <code>tmax</code>)</li>
+</ol>
+<p><strong>Step 1:</strong> First, we pivot the daily measurements into rows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">id</th>
+<th style="text-align: right;">year</th>
+<th style="text-align: right;">month</th>
+<th style="text-align: left;">element</th>
+<th style="text-align: left;">day</th>
+<th style="text-align: right;">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tmax</td>
+<td style="text-align: left;">d30</td>
+<td style="text-align: right;">27.8</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">tmin</td>
+<td style="text-align: left;">d30</td>
+<td style="text-align: right;">14.5</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">tmax</td>
+<td style="text-align: left;">d2</td>
+<td style="text-align: right;">27.3</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">tmax</td>
+<td style="text-align: left;">d3</td>
+<td style="text-align: right;">24.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">tmax</td>
+<td style="text-align: left;">d11</td>
+<td style="text-align: right;">29.7</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">tmax</td>
+<td style="text-align: left;">d23</td>
+<td style="text-align: right;">29.9</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 2:</strong> Next, we pivot the <code>element</code> types into separate columns:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">id</th>
+<th style="text-align: right;">year</th>
+<th style="text-align: right;">month</th>
+<th style="text-align: left;">day</th>
+<th style="text-align: right;">tmax</th>
+<th style="text-align: right;">tmin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">d30</td>
+<td style="text-align: right;">27.8</td>
+<td style="text-align: right;">14.5</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">d2</td>
+<td style="text-align: right;">27.3</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">d3</td>
+<td style="text-align: right;">24.1</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">d11</td>
+<td style="text-align: right;">29.7</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td style="text-align: left;">MX17004</td>
+<td style="text-align: right;">2010</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">d23</td>
+<td style="text-align: right;">29.9</td>
+<td style="text-align: right;">NA</td>
+</tr>
+</tbody>
+</table>
+<p>The final dataset is now tidy, with each variable in its own column and
+each observation in a single row.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>While tidying data may initially require more effort, the resulting
+structure provides significant benefits throughout the analysis
+pipeline. By following the principles of tidy data, analysts can create
+more maintainable, efficient, and reproducible workflows.</p>
+<p>For further exploration of tidy data concepts, see <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy
+Data</a> by Hadley Wickham.
+Most examples in this document come from the <a href="https://tidyr.tidyverse.org/articles/tidy-data.html">tidyr vignette on tidy
+data</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
