@@ -14,7 +14,7 @@
       - [Step-by-Step Process](#step-by-step-process)
     - [During the Cruise](#during-the-cruise)
     - [After the Cruise](#after-the-cruise)
-      - [Metadata & Data Flow](#metadata-data-flow)
+      - [Metadata \& Data Flow](#metadata--data-flow)
 
 <!--toc:end-->
 
@@ -85,14 +85,14 @@ flowchart LR
     C --> D[DOI & Open Access]
 ```
 
-1. Deposit all data into the [File Sharing Platform Hosted at Laval University](../data-management-planning-guide/ulaval-file-sharing.md). This provides a number of benefits:
+1. Work with your local Institutional Data Steward to Deposit all data into the [File Sharing Platform Hosted at Laval University](../data-management-planning-guide/ulaval-file-sharing.md). This provides a number of benefits:
     - Data are backed up, ensuring that data won't be lost due to equipment failure or human error
     - Data are easily shareable with other members of your team and other members of the cluster
     - Data from multiple research teams on-board the vessel can be centralized, making it easier to find and use
 
-2. Complete the entry in the [CIOOS Metadata Entry Tool](https://cioos-siooc.github.io/metadata-entry-form/#/en/region-select)
+2.  Complete the entry in the [CIOOS Metadata Entry Tool](https://cioos-siooc.github.io/metadata-entry-form/#/en/region-select)
 
-3. Contact your local CIOOS regional association and notify them that your metadata entry is complete. Direct them to the copy in the [File Sharing Platform Hosted at Laval University](../data-management-planning-guide/ulaval-file-sharing.md) to begin the process of publishing the data through CIOOS. Publishing data through CIOOS provides several benefits:
+3. **When you're ready to begin the process of publishing the data publicly onto the CIOOS platform**, contact your local CIOOS regional association and notify them that your metadata entry is complete. Direct them to the copy in the [File Sharing Platform Hosted at Laval University](../data-management-planning-guide/ulaval-file-sharing.md) to begin the process of publishing the data through CIOOS. Publishing data through CIOOS provides several benefits:
     - CIOOS creates DOIs for your data so that it can be easily cited in publications. This is becoming a common requirement for publication in many scientific journals
     - Publishing data in an open data repository increases the visibility, reach, and potential impact of your work and may lead to new opportunities for collaboration
     - Contributing to the open data ecosystem benefits all ocean users
